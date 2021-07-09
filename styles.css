@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body, html {
+  overflow-x: hidden;
+  background: #f7f2f2;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(images/bg-pattern-intro.svg);
+  background-position: center;
+  background-size: 150%;
+  padding: 4rem 10rem;
+  border-bottom-left-radius: 6rem;
+  background-repeat: no-repeat;
+  background-color: #ff3d54;
+}
+
+.header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation .site-nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation .site-nav li {
+  margin-right: 1.5rem;
+  list-style: none;
+  position: relative;
+}
+
+.header .navigation .site-nav li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header .navigation .site-nav li a:hover {
+  text-decoration: underline;
+}
+
+.header .navigation .site-nav li img {
+  margin-left: .5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .navigation .site-nav li .dropdown-menu {
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 10;
+}
+
+.header .navigation .site-nav li .dropdown-menu ul {
+  position: absolute;
+  margin-top: .2rem;
+  margin-left: -2rem;
+  background: white;
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+
+.header .navigation .site-nav li .dropdown-menu ul li {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.header .navigation .site-nav li .dropdown-menu ul li a {
+  color: #8f8f8f;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header .navigation .site-nav li .dropdown-menu ul li a:hover {
+  color: #0d0d0d;
+}
+
+.header .navigation .site-nav li .dropdown-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.header .navigation .site-nav li:hover img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.header .navigation .site-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+.header .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .register li {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+.header .register li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header .register li .signup {
+  padding: .8rem 2.5rem;
+  background: white;
+  color: #ff525d;
+  border: none;
+  border-radius: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .register li .signup:hover {
+  background: #ff7a85;
+  color: white;
+}
+
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.header .header-content h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.header .header-content p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.header .header-content .header-content-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-content .header-content-links li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.header .header-content .header-content-links li a {
+  text-decoration: none;
+  padding: .7rem  1.5rem;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header .header-content .header-content-links li .start {
+  background: white;
+  color: #ff3d54;
+  border-radius: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .header-content .header-content-links li .start:hover {
+  background: #ff7a85;
+  color: white;
+}
+
+.header .header-content .header-content-links li .learn {
+  background: transparent;
+  color: white;
+  border-radius: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px solid white;
+}
+
+.header .header-content .header-content-links li .learn:hover {
+  background: white;
+  color: #ff7a85;
+}
+
+.description {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 10rem 0 3rem 10rem;
+  background: #f7f2f2;
+  z-index: 2;
+}
+
+.description h2 {
+  font-size: 2.5rem;
+  color: #1f3f5b;
+  text-align: center;
+  margin-bottom: -4rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+.description .description-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.description .description-content .description-content-leftcolumn {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.description .description-content .description-content-leftcolumn h3 {
+  font-size: 1.8rem;
+  color: #1f3f5b;
+  margin-bottom: 2.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+.description .description-content .description-content-leftcolumn p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+}
+
+.description .description-content .description-content-rightcolumn {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.description .description-content .description-content-rightcolumn .desktop-editor {
+  width: 150%;
+  position: relative;
+}
+
+.services {
+  width: 100%;
+  position: relative;
+  padding: 8rem 10rem;
+  background: #2c2d3f;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services-rightcolumn {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.services .services-rightcolumn h4 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+}
+
+.services .services-rightcolumn p {
+  font-size: 1.1rem;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+
+.services .services-leftcolumn {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  position: relative;
+  background-image: url(./images/illustration-phones.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.services .services-leftcolumn .phone {
+  position: absolute;
+  left: -5rem;
+  top: -16rem;
+  z-index: 3;
+}
+
+.services .services-leftcolumn .circle-pattern {
+  position: absolute;
+  left: -25rem;
+  top: -50rem;
+  z-index: 1;
+  width: 250%;
+}
+
+.features {
+  width: 100%;
+  position: relative;
+  background: #f7f2f2;
+  padding: 8rem 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.features .features-leftcolumn {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+}
+
+.features .features-leftcolumn .laptop {
+  width: 150%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  left: -16rem;
+}
+
+.features .features-rightcolumn {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  position: relative;
+}
+
+.features .features-rightcolumn h5 {
+  font-size: 1.8rem;
+  color: #1f3f5b;
+  margin-bottom: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+.features .features-rightcolumn p {
+  font-size: .95rem;
+  color: #1f3f5b;
+  margin-bottom: 3rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  line-height: 2.1rem;
+}
+/*# sourceMappingURL=styles.css.map */
