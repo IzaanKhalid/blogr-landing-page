@@ -238,7 +238,6 @@ body, html {
 
 .description {
   width: 100%;
-  min-height: 100vh;
   position: relative;
   padding: 10rem 0 3rem 10rem;
   background: #f7f2f2;
@@ -299,7 +298,7 @@ body, html {
 .services {
   width: 100%;
   position: relative;
-  padding: 8rem 10rem;
+  padding: 3rem 10rem;
   background: #2c2d3f;
   border-top-right-radius: 6rem;
   border-bottom-left-radius: 6rem;
@@ -363,7 +362,7 @@ body, html {
   width: 100%;
   position: relative;
   background: #f7f2f2;
-  padding: 8rem 10rem;
+  padding: 20rem 10rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -388,7 +387,7 @@ body, html {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
-  left: -16rem;
+  left: -24rem;
 }
 
 .features .features-rightcolumn {
@@ -412,5 +411,70 @@ body, html {
   font-family: 'Overpass', sans-serif;
   font-weight: 300;
   line-height: 2.1rem;
+}
+
+footer {
+  width: 100%;
+  padding: 4rem 10rem 6rem;
+  position: relative;
+  background-color: #25252d;
+  border-top-right-radius: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+footer .footer h6 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+footer .footer ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+footer .footer ul li a {
+  text-decoration: none;
+  color: #c8c8cb;
+  font-size: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+footer .footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .attribution {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  color: #c8c8cb;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */
